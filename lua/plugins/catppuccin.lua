@@ -6,9 +6,23 @@ return {
   require("catppuccin").setup({
     integrations = {
       cmp = true,
+      dashboard = true,
       nvimtree = true,
       gitsigns = true,
+      neotree = true,
       treesitter = true,
+      notify = true,
+      noice = true,
+      which_key = true,
+      mini = true,
+      mason = true,
+      indent_blankline = true,
+      markdown = true,
+      treesitter_context = true,
+      telescope = {
+        enabled = true,
+        style = "nvchad",
+      },
     },
   }),
   config = function() end,
