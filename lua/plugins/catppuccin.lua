@@ -19,9 +19,10 @@ return {
       indent_blankline = true,
       markdown = true,
       treesitter_context = true,
+      harpoon = true,
       telescope = {
         enabled = true,
-        style = "nvchad",
+        style = "classic",
       },
     },
   }),

@@ -43,6 +43,11 @@ keymap.set("n", "<C-w><up>", "<C-w>+")
 keymap.set("n", "<C-w><down>", "<C-w>-")
 
 -- Diagnostics
-keymap.set("n", "<C-j>", function()
+keymap.set("n", "<C-l>", function()
   vim.diagnostic.goto_next()
 end, opts)
+
+-- Icon Picker
+keymap.set("n", "<Leader><C-i>", "<cmd>IconPickerNormal<cr>", opts)
+keymap.set("n", "<Leader>y", "<cmd>IconPickerYank<cr>", opts) --> Yank the selected icon into register
+keymap.set("i", "<C-i>", "<cmd>IconPickerInsert<cr>", opts)
